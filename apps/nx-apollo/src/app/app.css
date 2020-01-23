@@ -1,0 +1,13 @@
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+SetList {
+  flex: 1;
+  padding: 8px;
+}

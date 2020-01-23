@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+  }
+  
+  li {
+    padding: 8px;
+  }
+  
+  li:nth-child(2n) {
+    background-color: #eee;
+  }
+  
+  span.year {
+    display: block;
+    width: 20%;
+  }

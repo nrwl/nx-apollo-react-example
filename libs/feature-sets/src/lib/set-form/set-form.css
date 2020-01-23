@@ -1,0 +1,11 @@
+form {
+    font-family: sans-serif;
+    border: solid 1px #eee;
+    max-width: 240px;
+    padding: 24px;
+}
+
+input {
+    display: block;
+    margin-bottom: 8px;
+}
