@@ -1,4 +1,4 @@
-# NxApolloExample
+# Nx Apollo React Example
 
 This project was generated using [Nx](https://nx.dev).
 
@@ -13,8 +13,11 @@ GraphQL API
 [React](https://reactjs.org)
 - `npm start nx-apollo`
 
+## Interested in using Angular?
+This same example can be implemented in Angular. The repo for that can be found here: [https://github.com/nrwl/nx-apollo-angular-example](https://github.com/nrwl/nx-apollo-angular-example)
+
 ## What you’ll create
-In this article, we’ll be creating a simple GraphQL API that will allow us to track some information about Lego sets. We’ll create this API using NestJS, and it will be consumed by both an Angular and a React application. We’ll have this all inside of a Nx Workspace in a single repository.
+In this article, we’ll be creating a simple GraphQL API that will allow us to track some information about Lego sets. We’ll create this API using NestJS, and it will be consumed by a React application. We’ll have this all inside of a Nx Workspace in a single repository.
 
 ## What you’ll learn
 In this article, you’ll learn how to:
@@ -43,7 +46,7 @@ We’ll be using the NestJS framework to create our GraphQL API. First, let’s 
 
 `npm install --save-dev @nrwl/nest`
 
-`ng generate @nrwl/nest:application api`
+`nx generate @nrwl/nest:application api`
 
 When prompted for a directory, press enter. This will place the api application in the roots of our `apps` directory.
 
@@ -209,7 +212,7 @@ We’ll be using the Apollo client to consume our GraphQL API, so let’s instal
 Modify your app.tsx to provide the Apollo Client:
 
 ```typescript
-// apps/nx-apollo-react/src/app/app.tsx
+// apps/nx-apollo/src/app/app.tsx
 
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
@@ -497,7 +500,7 @@ Final step: bring those new components into our app component and add a little s
 // apps/nx-apollo/src/app/app.tsx
 
 import { ApolloProvider } from '@apollo/react-hooks';
-import { SetForm, SetList } from '@nx-apollo-example/react/feature-sets';
+import { SetForm, SetList } from '@nx-apollo-react-example/feature-sets';
 import ApolloClient from 'apollo-boost';
 import React from 'react';
 import './app.css';
